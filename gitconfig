@@ -1,0 +1,41 @@
+[user]
+name = Kushal Pisavadia
+email = kushi.p@gmail.com
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+excludesfile = /opt/boxen/config/git/gitignore
+
+[color]
+diff = auto
+status = auto
+branch = auto
+ui = auto
+
+[color "diff"]
+meta = yellow bold
+frag = magenta bold
+old = red bold
+new = green bold
+
+[alias]
+st = status
+ci = commit
+co = checkout
+br = branch
+w = whatchanged
+
+# show list of contributors in desc order by number of commits
+rank = shortlog -sne --no-merges
+
+diffstat = diff --stat -r
+l = log --abbrev-commit --pretty=oneline --graph --decorate
+lg = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short
+
+[github]
+user = KushalP
+
+[hub]
+protocol = https
