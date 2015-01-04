@@ -1,6 +1,6 @@
 SOURCE := $(CURDIR)
 TARGET := $(HOME)
-FILES  := gitconfig zshrc
+FILES  := gitconfig slate zshrc
 
 all: clean install
 
