@@ -16,3 +16,6 @@ esac
 
 # PATH includes the go binaries.
 export PATH=$GOPATH/bin:$PATH
+
+# Load up rbenv shims.
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
