@@ -24,3 +24,6 @@ if which nvm > /dev/null; then
     export NVM_DIR=~/.nvm
     source $(brew --prefix nvm)/nvm.sh
 fi
+
+# Load up autojump.
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
