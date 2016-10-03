@@ -18,3 +18,9 @@ export PATH=$GOPATH/bin:$PATH
 
 # Load up rbenv shims.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Load up nvm shims.
+if which nvm > /dev/null; then
+    export NVM_DIR=~/.nvm
+    source $(brew --prefix nvm)/nvm.sh
+fi
