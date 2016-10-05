@@ -3,8 +3,6 @@ export ZSH_THEME="muse"
 
 plugins=(brew git)
 
-export PATH=/usr/local/bin:$PATH
-
 source $ZSH/oh-my-zsh.sh
 source /opt/boxen/env.sh
 
