@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="muse"
 
-plugins=(brew git)
+plugins=(brew git nvm rbenv)
 
 source $ZSH/oh-my-zsh.sh
 source /opt/boxen/env.sh
@@ -13,14 +13,6 @@ esac
 
 # PATH includes the go binaries.
 export PATH=$GOPATH/bin:$PATH
-
-# Load up rbenv shims.
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Load up nvm shims.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # Load up autojump.
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
