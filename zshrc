@@ -7,8 +7,7 @@ source $ZSH/oh-my-zsh.sh
 source /opt/boxen/env.sh
 
 case $(hostname -s) in
-  300) export GOPATH=$HOME/Documents/golang ;;
-  *)   export GOPATH=$BOXEN_SRC_DIR/golang ;;
+  *)   export GOPATH="${BOXEN_SRC_DIR}golang" ;;
 esac
 
 # PATH includes the go binaries.
