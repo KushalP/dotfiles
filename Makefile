@@ -1,6 +1,6 @@
 SOURCE := $(CURDIR)
 TARGET := $(HOME)
-FILES  := gitconfig slate vimrc zshrc eshell
+FILES  := gitconfig slate vimrc zshrc.local eshell
 
 all: clean install
 
