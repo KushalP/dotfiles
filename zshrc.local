@@ -7,3 +7,5 @@ export PATH=$GOPATH/bin:$PATH
 
 # Load up autojump.
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+eval "$(rbenv init --no-rehash - zsh)"
