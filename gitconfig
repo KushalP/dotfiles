@@ -37,7 +37,5 @@ lg = log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short
 [github]
 user = KushalP
 
-[hub]
-protocol = https
 [push]
 	default = simple
