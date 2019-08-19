@@ -1,5 +1,5 @@
 case $(hostname -s) in
-  *)   export GOPATH="${BOXEN_SRC_DIR}golang" ;;
+  *)   export GOPATH="${HOME}/Projects/golang" ;;
 esac
 
 # PATH includes the go binaries.
